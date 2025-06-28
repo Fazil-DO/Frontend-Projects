@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background: #2e2e2e;
+      }
+      .container {
+        background: #2e2e2e;
+        color: #999;
+        width: 800px;
+        height: 100vh;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 40px;
+      }
+      .navbar ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #999;
+        transition: all 0.3s ease;
+      }
+      a:hover {
+        color: #fff;
+      }
+      i {
+        color: #999;
+        transition: all 0.3s ease;
+      }
+      i:hover {
+        color: #fff;
+      }
+      p {
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      .title {
+        font-size: 5em;
+        font-weight: 700;
+        color: #fff;
+      }
+      .sub-title {
+        font-size: 12px;
+      }
+      .card {
+        margin-top: 70px;
+      }
+      .des {
+        margin-bottom: 10px;
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .card > .des > .date {
+        float: right;
+        margin-right: 15px;
+        color: #999;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .card > .des > .date:hover {
+        color: #fff;
+      }
+      .line-break {
+        margin-top: 20px;
+        border: none;
+        border-top: 1px solid #999;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .footer {
+        margin-top: 50px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+      }
+      .footer > p {
+        font-size: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <i class="fa-solid fa-lightbulb"></i>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+        </ul>
+      </nav>
+      <p class="title">cs.Nyx</p>
+      <p class="sub-title">
+        Frontend, Backend, DevOps and everything in between.
+      </p>
+      
+      <div class="card">
+        <p class="des">
+          ECS Fargate: Intro <span class="date">Jan 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          IaaS vs PaaS vs SaaS <span class="date">Oct 24, 2024</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Set Up IAM Roles <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Create ECS Cluster <span class="date">Nov 3, 2025</span>
+        </p>
+<hr class="line-break">
+        <p class="des">
+          Task Definitions <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Terraform Basics <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">Security Groups <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">Launch Service <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">
+          Attach Load Balancer <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">CloudWatch Logs <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">
+          Secrets & Env Vars <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">Auto Scaling <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">
+          Blue-Green Deploy <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">CI/CD Pipeline <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">
+          S3 + DynamoDB State <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Cost Saving Tips <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">Common Errors <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">
+          Terraform Modules <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Terraform vs CFN <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Production Guide <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">Version Locking <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">Rollback Plans <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">Route 53 Setup <span class="date">Nov 3, 2025</span></p>
+        <hr class="line-break">
+        <p class="des">
+          Logging Best Practices <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Multi-Region Deploy <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          ECS Capacity Types <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">
+          Using ECR Images <span class="date">Nov 3, 2025</span>
+        </p>
+        <hr class="line-break">
+        <p class="des">IaC Principles <span class="date">Nov 3, 2025</span></p>
+
+      </div>
+      <div class="footer">
+        <p>© All rights reserved — cs.Nyx</p>
+      </div>
+    </div>
+  </body>
+</html>
