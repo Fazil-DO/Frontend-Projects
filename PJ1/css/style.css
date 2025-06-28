@@ -1,0 +1,237 @@
+/* ✅ Import working font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+/* ✅ Reset + Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #555879;
+    font-family: "Comic Neue", system-ui, sans-serif;
+}
+
+/* ✅ Header */
+.header {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+}
+
+/* ✅ Navbar structure */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: #F4EBD3;
+}
+
+/* ✅ Title branding */
+.title > a {
+    font-weight: 700;
+    font-size: 19px;
+    color: #BA487F;
+}
+
+/* ✅ Navigation links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li {
+    font-weight: 400;
+    padding: 6px 12px;
+    border-radius: 17px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links li:hover {
+    background: #98A1BC;
+}
+
+/* ✅ Hamburger menu for mobile */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #F4EBD3;
+    padding: 10px;
+}
+
+/* ✅ Banner section */
+.img-div {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-div img {
+    width: 150px;
+}
+
+.line-break {
+    margin-top: 20px;
+    border: none;
+    border-top: 2px solid #F4EBD3;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #BA487F;
+    margin-bottom: 5px;
+}
+
+.sub-title {
+    color: #F4EBD3;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+/* ✅ Main grid layout */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-img {
+  width: 90%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 10px; /* perfect circle */
+  margin-top: 10px; /* space from top */
+}
+/* ✅ Responsive dropdown nav */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.card-title{
+    font-weight: 700;
+    font-size: 19px;
+    color: #060606;
+    text-align: center;
+    margin-top: 15px;
+}
+p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+}
+.page {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+.p  {
+    font-size: 17px;
+    cursor: pointer;
+    color: #fff;
+}
+.link{
+    font-size: 19px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+.p:hover {
+    color: #BA487F;
+}
+.footer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: #749BC2;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.btn {
+    background: #91C8E4;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+.time {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+}
+.time > p {
+    position: relative;
+    right: 50px;
+    float: right;
+}
+
