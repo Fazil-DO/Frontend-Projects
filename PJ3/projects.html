@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #000000, #1a1a1a, #000000);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      backdrop-filter: blur(6px);
+      z-index: 1;
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      color: #fff;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.6; }
+      50% { opacity: 1; }
+      100% { opacity: 0.6; }
+    }
+
+    .nav {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      z-index: 3;
+      padding: 10px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    i {
+      margin-right: 8px;
+      color: #fff;
+    }
+
+    span a, .navbar a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+
+    @media (max-width: 500px) {
+      .navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .navbar ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <nav class="navbar nocopy">
+      <ul>
+        <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
+        <li><i class="fa-solid fa-briefcase"></i><a href="work.html">Work</a></li>
+        <li><i class="fa-solid fa-diagram-project"></i><a href="projects.html">Projects</a></li>
+        <li><i class="fa-solid fa-envelopes-bulk"></i><a href="posts.html">Posts</a></li>
+      </ul>
+      <span><a href="https://www.instagram.com/fazil_0_9/"><i class="fa-solid fa-message"></i> Say hi</a></span>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h1>🚧 Coming Soon!</h1>
+    </div>
+  </div>
+</body>
+</html>
